@@ -7,7 +7,7 @@ const Conversation = ({ conversation, lastIndex, emoji }) => {
 
     return (
         <>
-            <div className={`flex gap-2 items-center hover:bg-teal-600 rounded p-2 py-1 cursor-pointer ${isSelected ? 'bg-teal-700' : ''}`} onClick={() => setSelectedConversation(conversation)}>
+            <div className={`flex gap-2 items-center hover:bg-sky-600 rounded p-2 py-1 cursor-pointer ${isSelected ? 'bg-sky-700' : ''}`} onClick={() => setSelectedConversation(conversation)}>
                 <div className='avatar online'>
                     <div className='w-10 rounded-full'>
                         <img src={conversation.profilePic } alt="user avatar" />
