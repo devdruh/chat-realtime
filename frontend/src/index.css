@@ -19,3 +19,7 @@
 ::-webkit-scrollbar-thumb:hover {
 	background: #242424;
 }
+
+.chat-bubble {
+	@apply pt-2 px-3 min-h-8
+}
