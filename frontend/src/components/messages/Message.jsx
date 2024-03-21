@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useAuthContext } from "../context/AuthContext";
+import { useAuthContext } from "../../context/AuthContext";
 import useConversation from "../../zustand/useConversation";
 import { formatTime } from "../../utils/formatTime";
 
