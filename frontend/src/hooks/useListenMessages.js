@@ -9,6 +9,7 @@ const useListenMessages = () => {
 
     useEffect(() => {
         socket?.on('newMessage', (newMessage) => {
+            newMessage.animate = true;
             setMessages([...messages, newMessage]);
         });
 
