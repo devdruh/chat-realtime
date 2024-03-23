@@ -20,8 +20,9 @@ export const SocketContextProvider = ({ children }) => {
 
     useEffect(() => {
         if (authUser) {
-            // const socket = io("http://localhost:5000", {  // development socket connection
-            const socket = io('https://chat-realtime-sooty.vercel.app/', { // production socket connection
+            // eslint-disable-next-line no-undef
+            const socket = io(process.env.REACT_APP_SERVER_URL, {
+            // const socket = io('http://localhost:5000', {
                 query: {
                     userId: authUser._id
                 }
