@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => {
         "/api": {
           // eslint-disable-next-line no-undef
           // target: process.env.REACT_APP_SERVER_URL
-          target: 'http://localhost:5000'
+          target: 'https://chat-realtime-server-9h7i.onrender.com'
           // target: 'https://chat-realtime-client-prod.vercel.app'
         }
       }
